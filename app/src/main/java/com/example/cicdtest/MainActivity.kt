@@ -13,10 +13,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
-
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
