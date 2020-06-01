@@ -1,6 +1,5 @@
 package com.example.cicdtest
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -13,7 +12,6 @@ class CounterViewModel : ViewModel() {
     }
 
     fun onButtonPressed() {
-        Log.d("debug", count.value.toString())
         count.value = count.value?.plus(1)
     }
 }
