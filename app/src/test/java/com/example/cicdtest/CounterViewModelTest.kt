@@ -23,4 +23,12 @@ class CounterViewModelTest {
         viewModel.onButtonPressed()
         assertEquals(1, viewModel.getCount().value)
     }
+
+    @Test
+    fun onButtonPressedMultipleTimes_addsSumToCounter() {
+        for (i in 0..3) {
+            viewModel.onButtonPressed()
+        }
+        assertEquals(4, viewModel.getCount().value)
+    }
 }
